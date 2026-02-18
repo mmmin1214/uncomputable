@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리소스 플레이어</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #0000FF;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            line-height: 1;
+        }
+        .bottom {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .bottom-left {
+            flex: 1;
+        }
+        .bottom-right {
+            flex: 1;
+        }
+        a {
+            color: inherit;
+        }
+        
+        /* ========== 텍스트 크기 조절 ========== */
+        .title {
+            font-size: 48px;
+        }
+        .download {
+            font-size: 14px;
+        }
+        .usage {
+            font-size: 11px;
+        }
+        .description {
+            font-size: 18px;
+        }
+        /* ====================================== */
+        
+        .note {
+            color: gray;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <p class="title"><strong>리소스 플레이어  </strong><img src="https://raw.githubusercontent.com/mmmin1214/uncomputable/main/person-in-lotus-position_1f9d8.png" alt="icon" style="width: 64px; height: auto; vertical-align: middle;"></p>
+        <strong style="font-size: 21px;">김민영</strong>
+    </div>
+    <div class="bottom">
+        <div class="bottom-left description">
+            <p>컴퓨터에서 단 한 줄의 코드가 실행되는 데 걸리는 시간을 정확히 예측하는 것은 불가능합니다. 메모리 상태, 다른 프로세스들의 개입, 그리고 물리적 온도까지 수많은 변수들이 매 순간 개입합니다. 우리가 사용하는 컴퓨터는 완전히 통제 가능한 기계가 아니라 끊임없이 요동하는 환경입니다. '리소스 플레이어'는 이 예측 불가능한 환경 위에서 작동합니다. 사용자에게 제공하는 특별한 기능은 없이, 이 앱은 오직 CPU 사용량 10%라는 목표치를 향해 스스로를 조절합니다. 현재 상태를 측정하고 그 결과에 따라 다음 순간의 행동을 수정하는 피드백의 순환은 작업관리자 화면으로 관찰 가능하며, 그 수치는 목표 주위를 미세하게 오가며 아슬아슬한 균형을 찾아갑니다. 여기서 컴퓨터는 아무것도 생산하지 않습니다. 비어 있는 중심을 향해 끊임없이 자신을 조정하는 이 과정은, 연산이라는 노동을 하나의 명상적 수행으로 바꾸어 놓습니다.</p>
+        </div>
+        <div class="bottom-right usage">
+            <p><strong>Windows 사용법</strong></p>
+            <p>1. <strong><a href="https://github.com/mmmin1214/uncomputable/raw/main/ResourcePlayer.exe">여기</a></strong>에서 다운로드 후 더블클릭으로 실행</p>
+            <p>2. CPU 사용률 확인: Ctrl + Shift + Esc → 세부 정보(Details) 탭 → 이름(Name) 열 클릭하여 정렬 → 키보드로 "옴" 입력</p>
+            <p>3. 종료: 프로세스 우클릭 → 작업 끝내기(End task)</p>
+            <p>4. 삭제: 다운로드 폴더에서 ResourcePlayer.exe를 휴지통으로 이동</p>
+            <p class="note">* Windows Defender 경고 시: 추가 정보(More info) → 실행(Run anyway) 클릭</p>
+            <br>
+            <p><strong>Mac 사용법</strong></p>
+            <p>1. 터미널을 엽니다 (Cmd + Space → "터미널" 검색)</p>
+            <p>2. 아래 명령어를 복사해서 붙여넣고 Enter:</p>
+            <p style="background-color: #f5f5f5; padding: 8px; margin: 8px 0; font-family: monospace; word-break: break-all;">curl -sSL https://raw.githubusercontent.com/mmmin1214/uncomputable/main/install.sh | bash</p>
+            <p>3. CPU 사용률 확인: Cmd + Space → "활성 상태 보기" 검색 → CPU 탭 → "Resource" 입력</p>
+            <p>4. 종료: 활성 상태 보기에서 프로세스 선택 → X 버튼(Stop) 클릭</p>
+            <p>5. 삭제: Downloads 폴더에서 ResourcePlayer.app을 휴지통으로 이동</p>
+            <p class="note">* 자동으로 설치되고 앱이 실행됩니다</p>
+        </div>
+    </div>
+</body>
+</html>
